@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+*{  margin:0;
+    padding:0;
+    text-align:justify;
+    outline: none;
+    font-family: "微軟正黑體",sans-serif;}
+
+h2 {
+    display: block;
+    font-size: 2.5vh;
+    color: #ffcf55;
+    float: right;
+    margin-right: 6vh;
+}
+
+body{ 
+    height: 98vh;
+    margin: auto;
+    background: #757F9A; /*browsers not support*/
+    background: -webkit-linear-gradient(left top, #757F9A, #D7DDE8); 
+    /*Safari 5.1 to 6*/
+    background: -o-linear-gradient(bottom right, #757F9A, #D7DDE8);
+    /*Opera 11.1 to 12*/
+    background: -moz-linear-gradient(bottom right, #757F9A, #D7DDE8); 
+    /*Firefox 3.6 to 15*/
+    background: linear-gradient(to bottom right, #757F9A, #D7DDE8);
+    /*Standard syntax*/}
+
+#model { 
+    width: 52vh;
+    height: 93vh;
+    background: #222;
+    border-radius: 2vh;
+    margin: auto;
+    margin-top: 2vh;
+    box-shadow: 0 0 0.5vh #333;}
+
+.videobox{
+    width: 52vh;
+    height: 28vh;
+    overflow-y: hidden;
+    margin: auto;
+    background: transparent;}
+
+video { 
+    width: 52vh;
+    background: #222;
+    border-top-right-radius: 2vh;
+    border-top-left-radius: 2vh;}
+
+.descriptbox {
+    display: block;
+    width: 52vh;
+    height: 6vh;
+    font-size: 2.5vh;
+    color: white;
+    line-height: 6vh;
+    text-align: center;
+    letter-spacing: 0.2vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+    margin-top: -6vh;
+    position: relative;}
+
+#slideBox {
+    width: 52vh;
+    height: 2.5vh;
+    margin: auto;
+    background: #222;}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    display: block;
+    width: 48vh;
+    height: 3vh;
+    border-radius: 1vh;
+    background: #000;
+    margin: auto;}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    position: relative;
+    width: 12vh;
+    height: 4.9vh;
+    background-image: url(../image/slide.png);
+    background-repeat: no-repeat;
+    background-size: contain;}
+
+.buttonbox{
+    width: 52vh;
+    height: 40vh;
+    margin: auto;
+    background-color: #222;
+    padding-top: 0.5vh;}
+
+.barnumber{
+    width: 52vh;
+    height: 5vh;
+    margin: auto;
+    color: white;
+    font-size: 2.4vh;
+    font-weight: bold;
+    line-height: 6vh;
+    text-align: center;}
+
+.barnumber a {
+    display: block;
+    width: 12vh;
+    float: left;
+    text-align: center;}
+
+.barnumber a:first-child { margin-left: 2vh;}
+
+.buttonlight {
+    width: 46vh;
+    height: 7vh;
+    margin: auto;
+    margin-top: 1.5vh;
+    background: #333;
+    border-radius: 2vh;}
+
+.light1, .light2, .light3, .light4{
+    width: 4vh;
+    height: 4vh;
+    background-color: #cc2020;
+    box-shadow: 0 0 3vh #ff0000;
+    border-radius: 3vh;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+    margin-right: 2.5vh;
+    position: absolute;
+    display: none;}
+
+.light2 { margin-left: 15vh;}
+
+.light3 { margin-left: 27vh;}
+
+.light4 { margin-left: 39vh;}
+
+input{ border: none;}
+
+input:hover{ cursor: pointer;}
+
+.s1, .s2, .s3, .sy, .horn, .pdf, .siren { 
+    width: 10vh;
+    height: 11vh;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;}
+
+.s1 { background-image: url(../image/s1a.png)}
+.s1:active{ background-image: url(../image/s1b.png);}
+
+.s2 { 
+    margin-left: 15vh;
+    background-image: url(../image/s2a.png)}
+.s2:active{ background-image: url(../image/s2b.png);}
+
+.s3 { 
+    margin-left: 27vh;
+    background-image: url(../image/s3a.png)}
+.s3:active{ background-image: url(../image/s3b.png);}
+
+.sy { 
+    margin-left: 39vh;
+    background-image: url(../image/sya.png)}
+.sy:active{ background-image: url(../image/syb.png);}
+
+.horn { 
+    margin-top: 12vh;
+    background-image: url(../image/horna.png)}
+.horn:active{ background-image: url(../image/hornb.png);}
+
+.pdf { 
+    width: 20vh;
+    height: 6vh;
+    margin-top: 13.5vh;
+    margin-left: 16vh;
+    text-align: center;
+    border-radius: 1vh;
+    box-shadow: 0 0.6vh 0 #ddd;
+    color: firebrick;
+    background: #fff;
+    font-size: 2.2vh;
+    font-weight: bold;
+    line-height: 6vh;
+    letter-spacing: 0.1vh;}
+
+.pdf:active{ 
+    margin-top: 13.8vh;
+    box-shadow: 0 0.3vh 0 #ddd;}
+
+.siren { 
+    margin-top: 12vh;
+    margin-left: 39vh;
+    background-image: url(../image/sirena.png)}
+.siren:active{ background-image: url(../image/sirenb.png);}
+
+#switch {
+    position: absolute;
+    height: 16vh !important;
+    bottom: 5vh;
+    margin-left: 11vh;
+    display: block;
+    overflow: hidden;}
+
+#switchDes a {
+    display: block;
+    position: absolute;
+    width: 7vh;
+    height: 4vh;
+    color: white;
+    font-size: 2.4vh;
+    font-weight: bold;
+    line-height: 4vh;
+    letter-spacing: 0.2vh;}
+
+#switchDes a:first-letter { font-size: 2.6vh;}
+
+#rad, #man, #wal { text-align: right;}
+
+#rad, #koj { 
+    margin-top: 10vh;
+    margin-left: 4vh;}
+
+#koj { margin-left: 41vh;}
+
+#man, #hil { 
+    margin-top: 3vh;
+    margin-left: 8vh;}
+
+#hil { margin-left: 37vh;}
+
+#wal, #yel {
+    margin-top: -1vh;
+    margin-left: 17vh;}
+
+#yel { margin-left: 28vh;}
+
+#copyright {
+    margin: auto;
+    display: block;
+    font-size: 1.5vh;
+    width: 100vw;
+    text-align: center;
+    margin-top: 0.5vh;}

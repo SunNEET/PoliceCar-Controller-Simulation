@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <title>警報器模擬系統</title>
+    <meta charset="utf-8">
+    <link href="other/style.css" rel="stylesheet" media="all">
+    <link href="other/switch.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/roundslider.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+<div id="model">
+<div class="videobox">
+    <video autoplay loop>
+        <source id="video" src="" type="video/mp4">
+    </video>
+</div>
+    
+<div class="descriptbox" id="state">
+</div>
+    
+<div id="slideBox"></div>
+<input type="range" id="slide_bar" min="0" max="3" value="0"/>
+    
+<div class="buttonbox">
+    <div class="barnumber">
+    <a>0</a>
+    <a>1</a>
+    <a>2</a>
+    <a>3</a>
+    </div>
+    
+    <div class="buttonlight">
+        <div class="light1"></div><div class="light2"></div><div class="light3"></div><div class="light4"></div>
+    </div>
+    <input type="button" class="s1">
+    <input type="button" class="s2">
+    <input type="button" class="s3">
+    <input type="button" class="sy">
+    <br><input type="button"  class="horn">
+    <input type="button" class="pdf" value="下載詳細說明書" onclick="location.href='other/警報器詳細操作說明書.pdf'">
+    <input type="button" class="siren"><br>
+</div>
+    
+<div id="switch" class="rslider"></div>  
+<div id="switchDes"> 
+<a id="rad">RAD</a>
+<a id="man">MAN</a>
+<a id="wal">WAL</a>
+<a id="yel">YEL</a>
+<a id="hil">HI-L</a>
+<a id="koj">KOJ</a>
+</div>
+</div>
+    
+<a id="copyright">僅適用「蘭技」車頂警示燈。  Version 1.6。 <br>Copyright © 2017 桃園市政府警察局桃園警察分局交通組 All rights reserved.</a>
+    
+</body>
