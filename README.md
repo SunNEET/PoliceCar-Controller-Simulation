@@ -4,3 +4,6 @@
 - 用基礎的HTML、CSS、Javascripts和JQuery開發，支援RWD。
 - 轉鈕的部分用到plugin: [roundslider](http://roundsliderui.com/)。 
 - Deploy在Heroku上: https://police-car-light.herokuapp.com/
+
+## Preview
+<img src="https://i.imgur.com/mJVwD42.png" width="300" />
